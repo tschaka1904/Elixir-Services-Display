@@ -1,0 +1,160 @@
+.elixir_accordion_container .smk_accordion {
+    position: relative;
+    padding: 0;
+    list-style: none;
+    margin: 0 0 20px;
+    height: 100%;
+    width: 100%;
+}
+
+.elixir_accordion_container {
+    padding: 0;
+    font-family: 'Helvetica', Arial, sans-serif;
+    font-size: 14px;
+    max-width: 70%;
+    margin: 30px auto 100px;
+}
+
+/**
+ * --------------------------------------------------------------
+ * Section
+ * --------------------------------------------------------------
+ */
+.smk_accordion .accordion_in {
+    border: 1px solid #ccc;
+    position: relative;
+    z-index: 10;
+    margin-top: -1px;
+    overflow: hidden;
+}
+
+.accordion_content a:link {
+    color: #FF8C00;
+    text-decoration: none;
+
+}
+
+/* visited link */
+.accordion_content a:visited {
+    color: #ffa535;
+    text-decoration: none;
+
+}
+
+/* mouse over link */
+.accordion_content a:hover {
+    color: #de6f00;
+    text-decoration: underline;
+
+}
+
+/* selected link */
+.accordion_content a:active {
+    color: #FF8C00;
+    text-decoration: underline;
+}
+.accordion_content h3{
+    padding: 0;
+    margin: 0;
+}
+
+.accordion_content h2 {
+    margin: 25px 0 20px;
+    text-align: center;
+    color: #555;
+}
+
+.accordion_content td{
+    vertical-align:top;
+}
+
+.accordion_content_tag{
+    color: #7B7E85;
+    font-weight: bold;
+}
+
+.accordion_content{
+    color: darkgrey;
+    font-weight: lighter;
+}
+.accordion_content_topics{
+    color: #b66000;
+    font-weight: lighter;
+}
+
+/**
+ * --------------------------------------------------------------
+ * Head
+ * --------------------------------------------------------------
+ */
+.smk_accordion .accordion_in .accordion_head {
+    position: relative;
+    background: #FDFDFD;
+    padding: 10px;
+    font-size: 14px;
+    display: block;
+    cursor: pointer;
+}
+
+.smk_accordion .accordion_in .accordion_head .acc_icon_expand {
+    display: block;
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    margin-top: -9px;
+    background: url(../images/plusminus.png) center 0;
+}
+
+/**
+ * --------------------------------------------------------------
+ * Content
+ * --------------------------------------------------------------
+ */
+.smk_accordion .accordion_in .accordion_content {
+    background: #ffffff;
+    color: #505050;
+    padding: 3px 10px;
+}
+
+.smk_accordion .accordion_in .accordion_content h1:first-of-type,
+.smk_accordion .accordion_in .accordion_content h2:first-of-type,
+.smk_accordion .accordion_in .accordion_content h3:first-of-type,
+.smk_accordion .accordion_in .accordion_content h4:first-of-type,
+.smk_accordion .accordion_in .accordion_content h5:first-of-type,
+.smk_accordion .accordion_in .accordion_content h6:first-of-type {
+    margin-top: 5px;
+}
+
+/**
+ * --------------------------------------------------------------
+ * General
+ * --------------------------------------------------------------
+ */
+.smk_accordion .accordion_in:first-of-type,
+.smk_accordion .accordion_in:first-of-type .accordion_head {
+    border-radius: 3px 3px 0 0;
+}
+
+.smk_accordion .accordion_in:last-of-type,
+.smk_accordion .accordion_in:last-of-type .accordion_content {
+    border-radius: 0 0 3px 3px;
+}
+
+.smk_accordion .accordion_in.acc_active > .accordion_content {
+    display: block;
+}
+
+.smk_accordion .accordion_in.acc_active > .accordion_head {
+    background: #F9F9F9;
+}
+
+.smk_accordion .accordion_in.acc_active > .accordion_head .acc_icon_expand {
+    background: url(../images/plusminus.png) center -18px;
+}
+
+.smk_accordion.acc_with_icon .accordion_in .accordion_head,
+.smk_accordion.acc_with_icon .accordion_in .accordion_content {
+    padding-left: 40px;
+}
